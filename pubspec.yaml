@@ -1,0 +1,58 @@
+name: mexpense
+description: A personal expense tracker built with clean architecture.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_bloc: ^8.1.6
+  bloc: ^8.1.4
+
+  # Navigation
+  go_router: ^14.2.7
+
+  # Dependency Injection
+  get_it: ^8.0.2
+  injectable: ^2.5.0
+
+  # Network
+  connectivity_plus: ^6.0.5
+
+  # Immutable Data / Code Generation
+  freezed_annotation: ^2.4.4
+
+  # Functional Error Handling
+  dartz: ^0.10.1
+
+  # Utilities
+  equatable: ^2.0.5
+  intl: ^0.19.0
+  uuid: ^4.4.2
+
+  # Local Database
+  hive_ce: ^2.5.0
+  path_provider: ^2.1.0
+
+  # UI
+  fl_chart: ^0.69.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  mocktail: ^1.0.4
+  # hive_ce_generator is NOT needed since we wrote the adapter manually
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
